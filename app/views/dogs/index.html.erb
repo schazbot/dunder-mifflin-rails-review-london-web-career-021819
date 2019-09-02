@@ -1,0 +1,9 @@
+
+<h1>All da dogs</h1>
+<ul>
+<% @dogs.each do |dog|%>
+   <li> <%= link_to dog.name, dog_path(dog.id) %> </li>
+    <% end %>
+    </ul>
+
+    <%= button_to 'sort', sort_path %>
